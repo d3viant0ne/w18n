@@ -1,0 +1,23 @@
+{
+  "name": "w18n",
+  "private": true,
+  "scripts": {
+    "test": "NODE_PATH=./frontend mocha --timeout 15000 --compilers js:babel-core/register --require ignore-styles --require ./frontend/test_helper.js -- frontend/**/*.spec.js",
+    "watch": "NODE_PATH=./frontend mocha --watch --compilers js:babel-core/register --require ignore-styles --require ./frontend/test_helper.js -- frontend/**/*.spec.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "i18n-webpack-plugin": "1.0.0-beta.0",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {},
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  }
+}
