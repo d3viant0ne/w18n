@@ -7,3 +7,5 @@ Steps that reproduce the error for me:
 3. run yarn from the project root
 4. run webpack from the project root
 5. See stack trace
+
+(Reproduced with NodeJS 6.9.1 on Ubuntu and 6.9.4 on Windows)
